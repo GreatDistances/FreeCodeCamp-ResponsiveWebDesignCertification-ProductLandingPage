@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+  font-size: 62.5%;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  margin-top: 75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: darkred;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.25rem;
+}
+p, ul, li, .nav-link, label, input {
+  font-size: 1.5rem;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th {
+  background-color: #DDDDDD
+}
+
+th, td {
+  font-size: 1.25rem;
+  padding: 4px;
+}
+
+td {
+  background-color: #FFFFFF
+}
+
+#img-dimensions {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 525px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  background: linear-gradient(lightgrey, #D13D2D);
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+nav {
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  flex: 1;
+}
+
+@media only screen and (min-width: 600px) {
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex: 1;
+  }
+}
+@media only screen and (max-width: 599px) {
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  }
+}
+
+
+.nav-link {
+  color: #222222;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: orange;
+}
+
+section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  scroll-margin-top: 75px
+}
+
+section:last-of-type {
+  margin-bottom: 50px;
+}
+
+.retailers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.retailer-button {
+  background-color: orange;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+  background: linear-gradient(#EEEEEE, #BBBBBB);
+  padding-bottom: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #666666;
+}
